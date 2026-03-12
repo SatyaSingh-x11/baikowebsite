@@ -4,15 +4,15 @@
 <head>
 
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Baiko | Eco Friendly Bamboo Paper</title>
-
-<link rel="stylesheet" href="style.css">
+<title>Baiko | Bamboo Eco Products</title>
 
 <script src="https://cdn.tailwindcss.com"></script>
 
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+<link rel="stylesheet" href="css/style.css">
 
 </head>
 
@@ -20,109 +20,200 @@
 
 <!-- NAVBAR -->
 
-<nav class="flex justify-between items-center px-10 py-6 bg-white shadow">
+<nav class="bg-white shadow-lg">
+
+<div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
 
 <img src="assets/logo.png" class="h-10">
 
-<div class="space-x-6 font-medium">
+<div class="space-x-8 font-medium">
 
-<a href="#">Home</a>
-<a href="#">Products</a>
-<a href="#">Distributor</a>
-<a href="#">Contact</a>
+<a href="index.html">Home</a>
+<a href="shop.html">Shop</a>
+<a href="product.html">Products</a>
+<a href="distributor.html">Distributor</a>
+<a href="login.html" class="bg-green-600 text-white px-4 py-2 rounded-lg">
+Login
+</a>
+
+</div>
 
 </div>
 
 </nav>
 
+
 <!-- HERO -->
 
-<section class="hero text-center py-28 px-6 bg-green-900 text-white">
+<section class="bg-green-900 text-white py-24">
+
+<div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 px-6 items-center">
+
+<div>
 
 <h1 class="text-5xl font-bold mb-6">
-Eco Friendly Bamboo Paper
+
+Soft on you.  
+Softer on Earth.
+
 </h1>
 
-<p class="text-xl mb-8">
-Sustainable everyday essentials made from bamboo instead of trees.
+<p class="text-lg mb-8">
+
+Premium bamboo tissues that are sustainable, biodegradable and better for the planet.
+
 </p>
 
-<button class="bg-lime-400 text-black px-8 py-3 rounded-lg font-semibold hover:scale-105 transition">
+<a href="shop.html" class="bg-lime-400 text-black px-8 py-3 rounded-lg font-semibold">
 
 Shop Now
 
-</button>
+</a>
+
+</div>
+
+
+<!-- 3D MODEL -->
+
+<model-viewer 
+src="assets/product.glb"
+auto-rotate
+camera-controls
+shadow-intensity="1"
+style="width:100%;height:450px;background:#ffffff;border-radius:20px;">
+</model-viewer>
+
+</div>
 
 </section>
 
-<!-- ABOUT -->
 
-<section class="max-w-6xl mx-auto py-20 px-6">
 
-<div class="grid md:grid-cols-2 gap-10 items-center">
+<!-- FEATURES -->
 
-<img src="assets/tissue.jpg" data-aos="fade-right">
+<section class="py-20">
 
-<div data-aos="fade-left">
+<div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-10 px-6 text-center">
 
-<h2 class="text-4xl font-bold mb-4">
+<div>
+<h3 class="font-bold text-xl">100% Bamboo</h3>
+<p>No trees harmed</p>
+</div>
 
-About Baiko
+<div>
+<h3 class="font-bold text-xl">Zero Bleach</h3>
+<p>Safe for skin</p>
+</div>
 
-</h2>
+<div>
+<h3 class="font-bold text-xl">Eco Friendly</h3>
+<p>Biodegradable</p>
+</div>
 
-<p class="text-lg">
-
-Baiko is building India’s next eco-friendly FMCG brand using bamboo instead of trees.  
-Our products are biodegradable, sustainable and designed for modern homes.
-
-</p>
-
+<div>
+<h3 class="font-bold text-xl">3x Stronger</h3>
+<p>Premium quality tissue</p>
 </div>
 
 </div>
 
 </section>
 
-<!-- PRODUCTS -->
+
+
+<!-- PRODUCTS PREVIEW -->
 
 <section class="bg-white py-20">
 
-<h2 class="text-center text-4xl font-bold mb-16">
+<h2 class="text-4xl font-bold text-center mb-16">
 
 Our Products
 
 </h2>
 
-<div class="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto px-6">
+<div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-10 px-6">
 
-<div class="card" data-aos="zoom-in">
 
-<img src="assets/tissue.jpg">
+<div class="product-card">
+
+<img src="assets/tissue.png">
 
 <h3>Bamboo Toilet Tissue</h3>
 
-<p>Ultra soft biodegradable bamboo tissue.</p>
+<a href="product.html">View Product</a>
 
 </div>
 
-<div class="card" data-aos="zoom-in">
 
-<img src="assets/kitchen.jpg">
+<div class="product-card">
 
-<h3>Bamboo Kitchen Towels</h3>
-
-<p>Strong absorbent kitchen paper.</p>
-
-</div>
-
-<div class="card" data-aos="zoom-in">
-
-<img src="assets/napkin.jpg">
+<img src="assets/napkin.png">
 
 <h3>Bamboo Napkins</h3>
 
-<p>Eco friendly dining napkins.</p>
+<a href="product.html">View Product</a>
+
+</div>
+
+
+<div class="product-card">
+
+<img src="assets/kitchen.png">
+
+<h3>Bamboo Kitchen Towels</h3>
+
+<a href="product.html">View Product</a>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- TESTIMONIALS -->
+
+<section class="bg-gray-100 py-20">
+
+<h2 class="text-4xl font-bold text-center mb-16">
+
+What Customers Say
+
+</h2>
+
+<div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 px-6">
+
+<div class="testimonial">
+
+<p>
+"Best eco friendly tissues I have used."
+</p>
+
+<h4>Amazon Customer</h4>
+
+</div>
+
+
+<div class="testimonial">
+
+<p>
+"Soft and strong. Love the bamboo idea."
+</p>
+
+<h4>Flipkart Buyer</h4>
+
+</div>
+
+
+<div class="testimonial">
+
+<p>
+"Finally a sustainable alternative."
+</p>
+
+<h4>Verified Customer</h4>
 
 </div>
 
@@ -130,45 +221,44 @@ Our Products
 
 </section>
 
-<!-- DISTRIBUTOR -->
 
-<section class="bg-green-900 text-white text-center py-24">
+
+<!-- DISTRIBUTOR CTA -->
+
+<section class="bg-green-900 text-white py-24 text-center">
 
 <h2 class="text-4xl font-bold mb-6">
 
-Become a Distributor
+Become a Baiko Distributor
 
 </h2>
 
 <p class="mb-8">
 
-Join Baiko and help bring sustainable products to every Indian home.
+Join us in building India's next eco friendly FMCG brand.
 
 </p>
 
-<button class="bg-lime-400 text-black px-8 py-3 rounded-lg font-semibold">
+<a href="distributor.html" class="bg-lime-400 text-black px-8 py-3 rounded-lg font-semibold">
 
 Apply Now
 
-</button>
+</a>
 
 </section>
 
+
+
 <!-- FOOTER -->
 
-<footer class="bg-black text-white text-center py-10">
+<footer class="bg-black text-white py-10 text-center">
 
 <p>© 2026 BaikoLife</p>
 
 </footer>
 
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-<script>
-
-AOS.init();
-
-</script>
+<script src="js/script.js"></script>
 
 </body>
 
