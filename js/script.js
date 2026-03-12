@@ -60,3 +60,10 @@ window.addEventListener("load", () => {
 document.body.style.opacity = "1";
 
 });
+function toggleMenu() {
+
+const menu = document.getElementById("menu");
+
+menu.classList.toggle("hidden");
+
+}
