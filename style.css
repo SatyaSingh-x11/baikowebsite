@@ -15,3 +15,30 @@ margin-bottom:15px;
 .card:hover{
 transform:translateY(-10px);
 }
+.product-card{
+background:white;
+padding:20px;
+border-radius:12px;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+text-align:center;
+transition:0.3s;
+}
+
+.product-card img{
+border-radius:10px;
+margin-bottom:15px;
+}
+
+.product-card:hover{
+transform:translateY(-10px);
+}
+
+.buy-btn{
+display:inline-block;
+margin-top:10px;
+background:#8AC53E;
+color:black;
+padding:10px 18px;
+border-radius:8px;
+font-weight:bold;
+}
